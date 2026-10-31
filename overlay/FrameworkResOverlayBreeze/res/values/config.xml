@@ -1,0 +1,138 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Haptic feedback -->
+    <bool name="config_enableHapticTextHandle">true</bool>
+
+    <!-- Radio coexistence -->
+    <string-array name="radioAttributes">
+        <item>1,1</item>
+        <item>0,1</item>
+        <item>7,1</item>
+    </string-array>
+
+    <!-- Automatic brightness -->
+    <bool name="config_automatic_brightness_available">true</bool>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
+
+    <integer-array name="config_autoBrightnessLevels">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>100</item>
+        <item>150</item>
+        <item>210</item>
+        <item>255</item>
+    </integer-array>
+
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>70</item>
+        <item>110</item>
+        <item>160</item>
+        <item>200</item>
+        <item>255</item>
+    </integer-array>
+
+    <!-- Display -->
+    <bool name="config_unplugTurnsOnScreen">true</bool>
+    <bool name="config_setColorTransformAccelerated">true</bool>
+
+    <integer-array name="config_availableColorModes">
+        <item>256</item>
+        <item>257</item>
+        <item>258</item>
+    </integer-array>
+
+    <bool name="config_showNavigationBar">true</bool>
+
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">
+        M 0,0 H -35 V 121 H 35 V 0 H 0 Z
+    </string>
+
+    <!-- Refresh rate -->
+    <integer name="config_defaultRefreshRate">0</integer>
+    <integer name="config_defaultPeakRefreshRate">120</integer>
+
+    <!-- Haptics -->
+    <integer-array name="config_longPressVibePattern">
+        <item>0</item>
+        <item>50</item>
+    </integer-array>
+
+    <integer-array name="config_virtualKeyVibePattern">
+        <item>0</item>
+        <item>40</item>
+    </integer-array>
+
+    <integer-array name="config_doubleClickVibePattern">
+        <item>0</item>
+        <item>50</item>
+        <item>100</item>
+        <item>50</item>
+    </integer-array>
+
+    <!-- SIM -->
+    <bool name="config_hotswapCapable">true</bool>
+    <integer name="config_num_physical_slots">2</integer>
+    <bool name="config_stkNoAlphaUsrCnf">false</bool>
+
+    <!-- Doze -->
+    <item name="config_screenBrightnessDozeFloat"
+        format="float" type="dimen">0.06667</item>
+
+    <string name="config_dozeComponent">
+        com.android.systemui/com.android.systemui.doze.DozeService
+    </string>
+
+    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
+    <bool name="config_dozePulsePickup">true</bool>
+
+    <!-- Power management -->
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+
+    <!-- Network -->
+    <bool name="skip_restoring_network_selection">true</bool>
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
+
+    <!-- MMS -->
+    <string name="config_mms_user_agent">Android-Mms/2.0</string>
+    <string name="config_mms_user_agent_profile_url">
+        http://www.google.com/oha/rdf/ua-profile-kila.xml
+    </string>
+
+    <!-- Wi-Fi Display -->
+    <bool name="config_enableWifiDisplay">true</bool>
+    <bool name="config_wifiDisplaySupportsProtectedBuffers">false</bool>
+
+    <!-- Audio -->
+    <bool name="config_useDevInputEventForAudioJack">true</bool>
+    <bool name="config_supportAudioSourceUnprocessed">true</bool>
+
+    <!-- Telephony / IMS -->
+    <bool name="config_device_volte_available">true</bool>
+    <bool name="config_carrier_volte_available">true</bool>
+    <bool name="config_device_vt_available">true</bool>
+    <bool name="config_device_wfc_ims_available">true</bool>
+
+    <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
+
+    <bool name="config_telephony5gStandalone">true</bool>
+    <bool name="config_telephony5gNonStandalone">true</bool>
+    <bool name="config_voice_data_sms_auto_fallback">true</bool>
+
+    <!-- Gestures -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
+    <!-- Window manager -->
+    <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
+
+</resources>
